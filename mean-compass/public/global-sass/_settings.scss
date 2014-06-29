@@ -1,0 +1,16 @@
+
+
+$packageName: 'mean-compass';
+
+$imgUrl: '../' + $packageName + '/assets/img/';
+
+$icons-smart-layout:smart;
+@import "icons-smart/*.png";
+  
+//.icons-smart-sprite { background: url($imgUrl+'icons-smart-sf86194383e.png') no-repeat; }  
+
+//.exemple { @include icons-smart-sprite(yellow-button); }
+
+$blue:#3e5b97;
+$red: red;
+$purple:#4d345e;   

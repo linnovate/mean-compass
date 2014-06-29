@@ -1,0 +1,92 @@
+
+@import "mean-compass/public/base";  
+ 
+*{box-sizing: border-box;}
+ion-view {
+	background: transparent;
+}  
+
+header[ng-show="showHeader"]:not(.ng-hide) + ion-nav-view > ion-view {
+	margin-top: 5.5em;
+}
+
+.fb-contact { 
+	max-width: none;
+	line-height: 2.6;
+	background-color: $blue !important; 
+	border-color: #5671A7 !important; 
+	&:before { 
+		content: '';
+		@include icons-smart-sprite(f-fb);
+		display: inline-block;
+		padding: 17px 10px;
+		vertical-align: bottom;
+		margin-right: 10px;
+	}
+}
+.item-toggle,.item-toggle.dragging {
+	background: transparent !important; border: 0 !important;
+	border: 0;
+	color: white;
+	padding: 25px 0;
+}
+.toggle {
+	.track {
+		width: 106px;
+		height: 46px;
+		background-color: black;
+		border-color: #57585a !important;
+	}
+	input:checked + .track .handle {
+		@include transform(translate3d(35px, 0, 0));
+	}
+	.handle {
+		@include icons-smart-sprite(slider);
+		width: 78px;
+		height: 50px;
+		margin-top: -4px;
+		left: 2px;
+		background-color: transparent !important;
+	}
+	input:checked + .track {
+		background-color: $purple;
+	}
+}
+button {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.btn,.popup-buttons .button{
+	cursor: pointer;
+	line-height: 1.7;
+	font-size: 1.43em;
+	padding: 0 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	background: #4d345e;
+	border-color: #6D2E97;
+	border-radius: 0.4em;
+	margin: auto;
+	display: block;
+	color: white;
+	text-decoration: blink;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
+	&:focus{ outline:0;}
+}
+input.text, input.mail, input.password, input.tel{
+	background: black;
+	border-radius: 0.4em;
+	color: #57585a;
+	font-style: italic;
+	line-height: 1.2;
+	display: block;
+	font-size: 1.2em;
+	padding: 0.5em 0.7em;
+	border: 0.1em solid;
+	height: auto;
+}
+
+.popup-buttons {
+	margin: 0;
+}
